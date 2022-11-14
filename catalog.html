@@ -136,10 +136,12 @@
                       <div class="range">
                         <div class="range-wrapper-inputs">
                           <label class="catalog-filter-label">
-                            <input class="field" placeholder="от" type="number" name="price-from" id="price-from" value="0" min="0">
+                            <input class="field field-from" type="number" name="price-from" id="price-from" value="0" min="0">
+                            от
                           </label>
                           <label class="catalog-filter-label">
-                            <input class="field" placeholder="до" type="number" name="price-to" id="price-to" value="9000" min="0">
+                            <input class="field field-to" type="number" name="price-to" id="price-to" value="9000" min="0">
+                            до
                           </label>
                         </div>
 
@@ -351,5 +353,65 @@
       </div>
       </footer>
 
+      <!-- Модальное окно -->
+
+      <div class="modal-container modal-container-close">
+        <div class="modal modal-auth">
+          <div class="modal-frame-outer">
+            <button class="modal-close-button">
+              <span class="visually-hidden">Закрыть</span>
+            </button>
+            <section class="modal-content">
+              <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+                <form class="booking-form" action="https://echo.htmlacademy.ru/" method="post">
+                  <div class="modal-frame-inner">
+                    <p class="field-group">
+                      <label class="date-in modal-header">Дата Заезда:</label>
+                      <input class="date-in-field field" type="date" id="date-in" name="date-in">
+                    </p>
+                    <p class="field-group">
+                      <label class="date-out modal-header">Дата Выезда:</label>
+                      <input class="date-out-field field" type="date" id="date-out" name="date-out">
+                    </p>
+                    <p class="field-group-adults">
+                      <label class="amount-of-adults modal-header">Взрослые:</label>
+                      <div class="adults-plus-minus">
+                        <button class="plus-minus" type="button" id="minus">
+                          <svg aria-hidden="true" focusable="false" width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0v2h14V0H0Z" fill="#756157" fill-opacity=".3"/></svg>
+                        </button>
+                        <input class="amount-of-adults-field field" type="number" id="amount-of-adults" name="amount-of-adults" value="2">
+                        <button class="plus-minus" type="button" id="plus">
+                          <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" fill="#756157" fill-opacity=".3"/></svg>
+                        </button>
+                      </div>
+                    </p>
+                    <p class="field-group-chidren">
+                      <span class="children-info">
+                        <label class="amount-of-children modal-header">Дети:</label>
+                        <span class="tooltip">
+                          <button class="tooltip-toggle" type="button">
+                            <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="white" xmlns="http://www.w3.org/2000/svg"><circle cx="13" cy="13" r="13" fill="#83B3D3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z"/></svg>
+                          </button>
+                          <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                        </span>
+                      </span>
+                      <div class="children-plus-minus">
+                        <button class="plus-minus" type="button" id="minus">
+                          <svg aria-hidden="true" focusable="false" width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0v2h14V0H0Z" fill="#756157" fill-opacity=".3"/></svg>
+                        </button>
+                        <input class="amount-of-children-field field" type="number" id="amount-of-children" name="amount-of-children" value="2">
+                        <button class="plus-minus" type="button" id="plus">
+                          <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" fill="#756157" fill-opacity=".3"/></svg>
+                        </button>
+                      </div>
+                    </p>
+                    <button class="button searching-form-button" type="submit">Найти</button>
+                  </div>
+                </form>
+            </section>
+          </div>
+        </div>
+        </div>
+      </div>
     </body>
   </html>
