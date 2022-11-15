@@ -1593,7 +1593,8 @@ input::-webkit-inner-spin-button {
 
 .children-plus-minus,
 .adults-plus-minus {
-  width: 110px;
+  display: flex;
+  width: 100px;
   background: #F2F2F2;
   border-radius: 4px;
   text-align: center;
