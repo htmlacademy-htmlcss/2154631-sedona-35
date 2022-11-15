@@ -63,7 +63,7 @@
                 <a class="breadcrumbs-link next visually-hidden" href="#">ведёт</a>
               </li> -->
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link">Гостиницы</a>
+                <a class="breadcrumbs-link hotels">Гостиницы</a>
               </li>
             </ul>
             <div class="catalog-filter-container">
@@ -365,22 +365,22 @@
               <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
                 <form class="booking-form" action="https://echo.htmlacademy.ru/" method="post">
                   <div class="modal-frame-inner">
-                    <p class="field-group">
+                    <div class="field-group">
                       <label class="date-in modal-header">Дата Заезда:</label>
-                      <input class="date-in-field field" type="text" id="date-in" name="date-in" value="27 апреля 2020">
+                      <input class="date-in-field field" type="text" id="date-in" name="date-in" value="27 апреля 2020" placeholder="Укажите дату">
                       <button class="calendar-button" type="button">
                           <svg aria-hidden="true" focusable="false" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.75 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z" fill="#000"/><path d="M15 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h14v7ZM1 6V3h2v2h1V3h8v2h1V3h2v3H1Z" fill="#000"/><path d="M8 10c.3 0 .5-.2.5-.5S8.3 9 8 9s-.5.2-.5.5.2.5.5.5ZM10.25 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.75 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM8 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10.25 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z" fill="#000"/></svg>
                       </button>
-                      <!-- <span class="field-error">Мы не можем отправить вас в прошлое.</span> -->
-                    </p>
-                    <p class="field-group">
+                    </div>
+                    <p class="field-error">Мы не можем отправить вас в прошлое.</p>
+                    <div class="field-group">
                       <label class="date-out modal-header">Дата Выезда:</label>
-                        <input class="date-out-field field" type="text" id="date-out" name="date-out" value="1 сентября 2021">
+                        <input class="date-out-field field" type="text" id="date-out" name="date-out" value="1 сентября 2021" placeholder="Укажите дату">
                         <button class="calendar-button" type="button">
                           <svg aria-hidden="true" focusable="false" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.75 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z" fill="#000"/><path d="M15 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h14v7ZM1 6V3h2v2h1V3h8v2h1V3h2v3H1Z" fill="#000"/><path d="M8 10c.3 0 .5-.2.5-.5S8.3 9 8 9s-.5.2-.5.5.2.5.5.5ZM10.25 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.75 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM8 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10.25 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z" fill="#000"/></svg>
                         </button>
-                    <!-- <span class="field-true">На эти даты есть свободные номера. Пока есть.</span> -->
-                    </p>
+                    </div>
+                    <p class="field-true">На эти даты есть свободные номера. Пока есть.</p>
                     <div class="field-group-adults">
                       <label class="amount-of-adults modal-header">Взрослые:</label>
                       <div class="adults-plus-minus">
