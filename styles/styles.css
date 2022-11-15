@@ -87,6 +87,20 @@
     background: #68A2CA;
   }
 
+  .add-to-favourites:focus {
+    background: #68A2CA;
+  }
+
+  .add-to-favourites:active {
+    background: #82B3D3;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  .add-to-favourites:disabled {
+    background: #E5E5E5;
+    color: #FFFFFF;
+  }
+
   .in-favourites {
     background: #7DB54F;
   }
@@ -285,7 +299,7 @@
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  padding-bottom: 90px;
+  padding-bottom: 45px;
 }
 
 .advantages-list {
@@ -304,11 +318,13 @@
 
 
 .advantages-item {
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
   text-align: center;
   margin: 0;
-  padding: 0;
+  padding: 103px 0 121px;
+  /* box-sizing: border-box; */
+  height: 384px;
   flex-wrap: wrap;
   list-style: none;
   flex-direction: column;
@@ -393,11 +409,12 @@
 .recomendations-item {
   display: flex;
   margin: 0;
-  padding: 0;
+  padding-top: 70px;
+  padding-bottom: 90px;
   flex-direction: column;
   align-items: center;
   width: 400px;
-  height: 384px;
+
 }
 
 .wrapper {
@@ -424,7 +441,7 @@
   line-height: 21px;
   text-align: center;
   color: #333333;
-  margin: 0;
+  margin: 0 85px;
 }
 
 .white-title {
@@ -447,7 +464,7 @@
   line-height: 21px;
   text-align: center;
   color: #FFFFFF;
-  margin: 0;
+  margin: 0 85px;
 
 }
 
@@ -466,10 +483,10 @@
   /* padding: 103px 85px 121px; */
 }
 
-.recomendations-picture {
+/* .recomendations-picture {
   padding-top: 80px;
   padding-bottom: 30px;
-}
+} */
 
 .interested-list {
   background: #FFFFFF;
@@ -548,7 +565,8 @@ margin: 0;
 }
 
 .clear-button:focus {
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
+  outline-offset: -3px;
 }
 
 .subscribers-title {
@@ -574,7 +592,7 @@ margin: 0;
 
 .field {
   background: #F2F2F2;
-  /* border-radius: 4px 0 0 4px; */
+  border-radius: 4px 0 0 4px;
   margin: 0;
   border: none;
   font: inherit;
@@ -582,7 +600,7 @@ margin: 0;
   width: 452px;
 }
 
-/* .field:hover {
+.field:hover {
   background: #E6E6E6;
 }
 
@@ -597,14 +615,14 @@ margin: 0;
   outline: 2px solid #000000;
   outline-offset: -2px;
 
-} */
+}
 
 .field + .field {
   padding-left: 0;
 }
 
 .pricing-filter .field {
-  width: 143px;
+  width: 65px;
   border-radius: 4px 0 0 4px;
   font-weight: 700;
 }
@@ -617,6 +635,14 @@ margin: 0;
   outline: none;
   border: none;
 } */
+
+.left {
+  border-radius: 4px 0 0 4px;
+}
+
+.right {
+  border-radius: 0 4px 4px 0;
+}
 
 .catalog-filter-label {
   display: flex;
@@ -773,7 +799,9 @@ margin: 0;
 }
 
 .footer-social-link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 40px;
   background-color: #FFFFFF;
   /* background-size: 24px 14px; */
@@ -1059,6 +1087,7 @@ input::-webkit-inner-spin-button {
 
 .founded .button:focus {
   border-color: #68A2CA;
+  outline: 0;
   background-color: #FFFFFF;
 }
 
@@ -1249,6 +1278,23 @@ input::-webkit-inner-spin-button {
   opacity: 0.3;
 }
 
+.more-info:hover,
+.more-info:focus {
+  background: #615048;
+}
+
+.more-info:active {
+  background: #756157;
+  color: rgba(255, 255, 255, 0.3);
+
+}
+
+.more-info:disabled {
+  background: #E5E5E5;
+  color: #FFFFFF;
+}
+
+
 /* .more-info {
   padding: 8px 26px;
   text-align: center;
@@ -1260,7 +1306,7 @@ input::-webkit-inner-spin-button {
   position: relative;
   height: 4px;
   margin-top: 48px;
-  background-color: grey;
+  background-color: rgba(255, 255, 255, 0.3);
   /* border: 4px solid #FFFFFF; */
 }
 
@@ -1295,7 +1341,9 @@ input::-webkit-inner-spin-button {
   border-radius: 4px;
 }
 
-
+.wrapper-container {
+  margin-bottom: 22px;
+}
 
 
 
@@ -1353,21 +1401,22 @@ input::-webkit-inner-spin-button {
   opacity: 0.3;
 }
 
-.control .control-mark:hover {
+.control-mark:hover {
   background: #FFFFFF;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   opacity: 1;
 }
 
-.control .control-mark:focus {
-  border: 3px solid #83B3D3;
+.control-mark:focus {
+  outline: 3px solid #83B3D3;
+  outline-offset: -3px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
 }
 
-.control .control-mark:active {
-  border: 2px solid #83B3D3;
+.control-mark:active {
+  outline: 2px solid #83B3D3;
   box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
 }
 
@@ -1385,6 +1434,13 @@ input::-webkit-inner-spin-button {
   background-image: url(../images/radio.svg);
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.control-input[type="checkbox"]:focus + .control-mark {
+  outline: 3px solid #83B3D3;
+  outline-offset: -3px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
 }
 
 .button-item {
@@ -1462,6 +1518,7 @@ input::-webkit-inner-spin-button {
 
 .searching-form-button {
   grid-column: 1 / 3;
+  height: 60px;
 }
 
 .field-group {
@@ -1484,8 +1541,11 @@ input::-webkit-inner-spin-button {
 
 .plus-minus {
   border: none;
-  /* padding: 0 13px; */
+  padding: 0 6px;
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .children-plus-minus,
@@ -1537,7 +1597,8 @@ input::-webkit-inner-spin-button {
   background: #F2F2F2;
   border-radius: 4px;
   height: 48px;
-}
+} */
+/*
 
 .children-field {
   cursor: pointer;
@@ -1568,16 +1629,14 @@ input::-webkit-inner-spin-button {
   cursor: pointer;
 } */
 
-/* .modal-container-close {
+.modal-container-close {
   display: none;
-} */
+}
 
 /* Тултип */
 
 .tooltip {
   position: absolute;
-  width: 216px;
-  height: 110px;
   margin-left: 10px;
   margin-bottom: 6px;
 
@@ -1612,7 +1671,7 @@ input::-webkit-inner-spin-button {
   width: 256px;
   position: absolute;
   margin-bottom: 6px;
-  left: 5%;
+  left: 50%;
   transform: translateX(-50%);
   z-index: 1;
   display: none;
@@ -1631,8 +1690,20 @@ input::-webkit-inner-spin-button {
   position:absolute;
   /* transform: rotate(180deg); */
   bottom: 100%;
-  left:0;
-  right:0;
+  left: 50%;
+  /* right:0; */
   margin-left: auto;
   margin-right: auto;
+  transform: translateX(-50%);
+}
+
+.calendar-button {
+  position: absolute;
+  border: none;
+  right: 80px;
+  cursor: pointer;
+}
+
+.date-in-field {
+  position: relative;
 }

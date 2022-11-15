@@ -135,11 +135,11 @@
                       <legend class="catalog-filter-title">Стоимость, ₽: </legend>
                       <div class="range">
                         <div class="range-wrapper-inputs">
-                          <label class="catalog-filter-label">
+                          <label class="catalog-filter-label left">
                             <input class="field field-from" type="number" name="price-from" id="price-from" value="0" min="0">
                             от
                           </label>
-                          <label class="catalog-filter-label">
+                          <label class="catalog-filter-label right">
                             <input class="field field-to" type="number" name="price-to" id="price-to" value="9000" min="0">
                             до
                           </label>
@@ -367,13 +367,21 @@
                   <div class="modal-frame-inner">
                     <p class="field-group">
                       <label class="date-in modal-header">Дата Заезда:</label>
-                      <input class="date-in-field field" type="date" id="date-in" name="date-in">
+                      <input class="date-in-field field" type="text" id="date-in" name="date-in" value="27 апреля 2020">
+                      <button class="calendar-button" type="button">
+                          <svg aria-hidden="true" focusable="false" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.75 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z" fill="#000"/><path d="M15 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h14v7ZM1 6V3h2v2h1V3h8v2h1V3h2v3H1Z" fill="#000"/><path d="M8 10c.3 0 .5-.2.5-.5S8.3 9 8 9s-.5.2-.5.5.2.5.5.5ZM10.25 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.75 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM8 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10.25 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z" fill="#000"/></svg>
+                      </button>
+                      <!-- <span class="field-error">Мы не можем отправить вас в прошлое.</span> -->
                     </p>
                     <p class="field-group">
                       <label class="date-out modal-header">Дата Выезда:</label>
-                      <input class="date-out-field field" type="date" id="date-out" name="date-out">
+                        <input class="date-out-field field" type="text" id="date-out" name="date-out" value="1 сентября 2021">
+                        <button class="calendar-button" type="button">
+                          <svg aria-hidden="true" focusable="false" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.75 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z" fill="#000"/><path d="M15 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h14v7ZM1 6V3h2v2h1V3h8v2h1V3h2v3H1Z" fill="#000"/><path d="M8 10c.3 0 .5-.2.5-.5S8.3 9 8 9s-.5.2-.5.5.2.5.5.5ZM10.25 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.75 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM8 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10.25 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z" fill="#000"/></svg>
+                        </button>
+                    <!-- <span class="field-true">На эти даты есть свободные номера. Пока есть.</span> -->
                     </p>
-                    <p class="field-group-adults">
+                    <div class="field-group-adults">
                       <label class="amount-of-adults modal-header">Взрослые:</label>
                       <div class="adults-plus-minus">
                         <button class="plus-minus" type="button" id="minus">
@@ -384,8 +392,8 @@
                           <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" fill="#756157" fill-opacity=".3"/></svg>
                         </button>
                       </div>
-                    </p>
-                    <p class="field-group-chidren">
+                    </div>
+                    <div class="field-group-chidren">
                       <span class="children-info">
                         <label class="amount-of-children modal-header">Дети:</label>
                         <span class="tooltip">
@@ -404,7 +412,7 @@
                           <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" fill="#756157" fill-opacity=".3"/></svg>
                         </button>
                       </div>
-                    </p>
+                    </div>
                     <button class="button searching-form-button" type="submit">Найти</button>
                   </div>
                 </form>
