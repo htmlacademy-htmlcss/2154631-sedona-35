@@ -1596,6 +1596,11 @@ input::-webkit-inner-spin-button {
   width: 110px;
   background: #F2F2F2;
   border-radius: 4px;
+  text-align: center;
+}
+
+.children-plus-minus {
+  margin-right: 4px;
 }
 
 .modal-frame-outer .button {
@@ -1618,19 +1623,26 @@ input::-webkit-inner-spin-button {
 
 .modal-close-button {
   position: absolute;
-  padding: 0;
-  top: 0;
-  right: 0;
-  width: 52px;
-  height: 52px;
-  background-image: url("../images/cross.svg"), url("../images/Ellipse.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  margin-left: 542px;
+  padding: 19px;
+  border-radius: 50%;
   cursor: pointer;
   border: none;
-  background-color: white;
-  margin-right: 52px;
-  margin-top: 54px;
+  background: #F2F2F2;
+}
+
+.modal-close-button:hover {
+  background: #E6E6E6;
+}
+
+.modal-close-button:focus {
+  background: #E6E6E6;
+  outline: 3px solid #83B3D3;
+  outline-offset: -3px;
+}
+
+.modal-close-button:active {
+  background: #E6E6E6;
 }
 
 .modal-title {
@@ -1645,10 +1657,18 @@ input::-webkit-inner-spin-button {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+
+  /* margin-right: 18px; */
 }
 
 .date-in-field, .date-out-field {
+  margin-left: 18px;
   padding-left: 20px;
+
+}
+
+.date-out, .date-in {
+  min-width: 120px;
 }
 
 /*
