@@ -146,14 +146,14 @@
     margin-left: auto;
   }
 
-  .navigation-user .navigation-item:nth-child(1) .navigation-link{
+  .navigation-user .navigation-link{
     background-image: url("../images/search.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-color: #FFFFFF;
   }
 
-  .navigation-user .navigation-item:nth-child(2) .navigation-link{
+  .navigation-user .likes{
     background-image: url("../images/likes.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -172,7 +172,7 @@
 
   .navigation-link {
   display: block;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', normal;
   line-height: 24px;
   font-size: 20px;
   font-weight: 700;
@@ -393,7 +393,7 @@
 }
 
 .white-title {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', normal;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -405,7 +405,7 @@
 }
 
 .white-description {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', normal;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
