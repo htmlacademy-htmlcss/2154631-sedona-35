@@ -1,36 +1,36 @@
 @font-face {
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: 400;
-    src: url("../fonts/ptsans-400.woff2") format("woff2");
-    font-display: swap;
-  }
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
 
 
 @font-face {
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: 700;
-    src: url("../fonts/ptsans-700.woff2") format("woff2");
-    font-display: swap;
-  }
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
 
-  html {
-    height: 100%;
-  }
 
-  body {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-    font-family: "PT Sans" , sans-serif;
-    font-size: 18px;
-    line-height: 21px;
-    color: #333333;
-    background-color: #FFFFFF;
+html {
+  height: 100%;
+}
 
-  }
+ body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "PT Sans" , sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  background-color: #FFFFFF;
+ }
 
 
   .button {
@@ -144,6 +144,8 @@
   .navigation-user {
     align-items: flex-end;
     margin-left: auto;
+    padding-right: 2px;
+
   }
 
   .navigation-user .navigation-link{
@@ -151,6 +153,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-color: #FFFFFF;
+    margin-bottom: 3px;
   }
 
   .navigation-user .likes{
@@ -158,6 +161,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-color: #FFFFFF;
+    padding-right: 4px;
   }
 
   .navigation-icon {
@@ -221,7 +225,7 @@
     padding: 8px 34px;
     margin-top: 14px;
     margin-bottom: 14px;
-    margin-left: 11px;
+    margin-left: 22px;
   }
 
 
@@ -246,7 +250,7 @@
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 50px;
+  padding-top: 47px;
   font-weight: 700;
 
 }
@@ -353,7 +357,7 @@
 .recomendations-item {
   display: flex;
   margin: 0;
-  padding-top: 87px;
+  padding-top: 80px;
   padding-bottom: 79px;
   flex-direction: column;
   align-items: center;
@@ -363,6 +367,11 @@
 
 .recomendations-title {
   margin: 31px;
+  margin-top: 28px;
+}
+
+.souvenirs .recomendations-title {
+  margin-top: 21px;
 }
 
 .wrapper {
@@ -475,6 +484,12 @@ gap: 10px;
 margin: 0;
 }
 
+.subscribe {
+  font-weight: 700;
+font-size: 20px;
+line-height: 36px;
+}
+
 .subscribers-catalog {
   background-color: #FFFFFF;
   color: #000000;
@@ -493,7 +508,7 @@ margin: 0;
   background-color: transparent;
   font-size: 16px;
   line-height: 20px;
-  margin-top: 35px;
+  margin-top: 31px;
   padding: 8px 50px;
 }
 
@@ -575,7 +590,7 @@ margin: 0;
 
 .catalog-filter-label {
   display: flex;
-  width: 146px;
+  width: 143px;
   margin: 0;
   align-items: center;
   background: #F2F2F2;
@@ -636,7 +651,7 @@ margin: 0;
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
-  margin-bottom: 36px;
+  margin-bottom: 32px;
 }
 
 .catalog-filter-list {
@@ -666,10 +681,13 @@ margin: 0;
 }
 
 .subscribers-button {
-  width: 232px;
+  width: 242px;
   height: 52px;
   background-color: #82B3D3;
   border-radius: 0 4px 4px 0;
+  font-weight: 700;
+font-size: 20px;
+line-height: 36px;
 }
 
 .subscribers-button:hover,
@@ -690,7 +708,7 @@ margin: 0;
   text-decoration: none;
   color:#000000;
   margin: 0;
-  padding: 8px 236px 35px 190px;
+  padding: 8px 236px 35px 184px;
 }
 
 .footer-contacts-phone:hover,
@@ -707,9 +725,9 @@ margin: 0;
   flex-wrap: wrap;
   list-style-type: none;
   justify-content: space-around;
-  padding-top: 10px;
+  padding-top: 8px;
   padding-right: 45px;
-  padding-left: 70px;
+  padding-left: 68px;
   margin: 0;
   width: 150px;
   }
@@ -807,7 +825,7 @@ margin: 0;
 }
 
 .hotels-filter {
-  padding: 35px 70px 70px;
+  padding: 35px 70px 51px;
 }
 
 input::-webkit-outer-spin-button,
@@ -858,7 +876,7 @@ input[type=number] {
 
 .type-of-housing-filter {
   display: flex;
-  margin-right: 156px;
+  margin-right: 142px;
 }
 
 .cost-filter {
@@ -872,8 +890,8 @@ input[type=number] {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  margin-top: 11px;
-  margin-bottom: 42px;
+  margin-top: 8px;
+  margin-bottom: 40px;
 }
 
 .breadcrumbs-link {
@@ -936,7 +954,7 @@ input[type=number] {
 
 .founded-container {
   display: flex;
-  margin: 50px 70px 40px;
+  margin: 30px 58px 20px 70px;
   padding: 0;
   flex-wrap: wrap;
 }
@@ -945,7 +963,7 @@ input[type=number] {
   display: flex;
   margin-right: 0;
   flex-wrap: wrap;
-  margin-left: auto;
+  margin-left: 200px;
 }
 
 .select {
@@ -953,7 +971,8 @@ input[type=number] {
   display: flex;
   align-items: center;
   width: 292px;
-  margin-right: auto;
+  /* margin-right: auto; */
+  margin-right: 70px;
 }
 
 /* Control */
@@ -1011,8 +1030,10 @@ input[type=number] {
 }
 
 .buttons-container {
-  margin-left: 70px;
+  display: flex;
+  gap: 8px;
   padding-top: 1em;
+  /* width: 160px; */
 }
 
 
@@ -1041,9 +1062,9 @@ input[type=number] {
   background-color: #FFFFFF;
 }
 
-.founded .button:not(:last-child) {
+/* .founded .button:not(:last-child) {
   margin-right: 8px;
-}
+} */
 
 .founded-number {
   font-weight: 700;
@@ -1062,7 +1083,7 @@ input[type=number] {
   margin: 0 70px;
   padding: 0;
   gap: 20px;
-
+  row-gap: 16px;
 }
 
 .hotel-card {
@@ -1079,6 +1100,9 @@ input[type=number] {
   margin-top: 16px;
   margin-bottom: 16px;
   color: #000000;
+  font-weight: 700;
+font-size: 24px;
+line-height: 28px;
 }
 
 .hotel-card-content {
@@ -1109,7 +1133,10 @@ input[type=number] {
   display: flex;
   padding-top: 40px;
   padding-bottom: 60px;
-  padding-left: 70px;
+  margin-left: 70px;
+  margin-right: 70px;
+  border-top: 1px solid #E6E6E6;
+  margin-top: 36px;
 }
 
 .pagination {
@@ -1214,6 +1241,7 @@ input[type=number] {
   font-size: 16px;
   box-sizing: border-box;
   line-height: 20px;
+  width: 191px;
 }
 
 .submit-button:hover,
@@ -1273,7 +1301,7 @@ input[type=number] {
 
 .toggle-max {
   top: -8px;
-  right: -10px;
+  right: -2px;
 }
 
 .range-wrapper-inputs {
@@ -1320,7 +1348,7 @@ input[type=number] {
 
 .control-infra,
 .control-type {
-  margin-left: 18px;
+  margin-left: 19px;
   color: #FFFFFF;
   line-height: 23px;
   font-weight: 400;
