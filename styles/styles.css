@@ -176,7 +176,7 @@ html {
 
   .navigation-link {
   display: block;
-  font-family: 'PT Sans', normal;
+  font-family: 'PT Sans', serif;
   line-height: 24px;
   font-size: 20px;
   font-weight: 700;
@@ -402,7 +402,7 @@ html {
 }
 
 .white-title {
-  font-family: 'PT Sans', normal;
+  font-family: 'PT Sans', serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -414,7 +414,7 @@ html {
 }
 
 .white-description {
-  font-family: 'PT Sans', normal;
+  font-family: 'PT Sans', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
