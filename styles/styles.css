@@ -971,7 +971,6 @@ input[type=number] {
   display: flex;
   align-items: center;
   width: 292px;
-  /* margin-right: auto; */
   margin-right: 70px;
 }
 
@@ -1033,7 +1032,6 @@ input[type=number] {
   display: flex;
   gap: 8px;
   padding-top: 1em;
-  /* width: 160px; */
 }
 
 
@@ -1062,9 +1060,7 @@ input[type=number] {
   background-color: #FFFFFF;
 }
 
-/* .founded .button:not(:last-child) {
-  margin-right: 8px;
-} */
+
 
 .founded-number {
   font-weight: 700;
@@ -1396,6 +1392,7 @@ line-height: 28px;
   box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
 }
 
+
 .control-input[type="checkbox"]:checked + .control-mark {
   background-image: url("../images/tick.svg");
   background-color: #FFFFFF;
@@ -1419,6 +1416,13 @@ line-height: 28px;
   outline-offset: -3px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
+}
+
+.control-input[type="radio"]:focus + .control-mark {
+  outline: 3px solid #83B3D3;
+  outline-offset: -3px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
 }
 
 .button-item {
@@ -1624,8 +1628,6 @@ line-height: 28px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-
-  /* margin-right: 18px; */
 }
 
 .date-in-field, .date-out-field {
