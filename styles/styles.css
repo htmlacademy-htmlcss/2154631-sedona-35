@@ -225,7 +225,7 @@ html {
     padding: 8px 34px;
     margin-top: 14px;
     margin-bottom: 14px;
-    margin-left: 22px;
+    margin-left: 24px;
   }
 
 
@@ -279,7 +279,7 @@ html {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  padding-bottom: 70px;
+  padding-bottom: 67px;
 }
 
 .advantages-list {
@@ -289,6 +289,7 @@ html {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  row-gap: 0;
 }
 
 .advantages-item-photo {
@@ -331,6 +332,17 @@ html {
   width: 60px;
   order: 2;
   flex-grow: 1;
+  margin: 28px 170px;
+  padding-bottom: 4px;
+}
+
+.wrapper-low .title::after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  width: 60px;
+  order: 2;
+  flex-grow: 1;
   margin: 30px 170px;
 }
 
@@ -367,11 +379,15 @@ html {
 
 .recomendations-title {
   margin: 31px;
-  margin-top: 28px;
+  margin-top: 30px;
 }
 
 .souvenirs .recomendations-title {
-  margin-top: 21px;
+  margin-top: 25px;
+}
+
+.food .recomendations-title {
+  margin-top: 32px;
 }
 
 .wrapper {
@@ -380,6 +396,16 @@ html {
   justify-content: center;
   flex-direction: column;
   width: 400px;
+  padding-top: 4px;
+}
+
+.wrapper-low {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 400px;
+  padding-bottom: 12px;
 }
 
 .black-title {
@@ -401,6 +427,18 @@ html {
   margin: 0 85px;
 }
 
+.title {
+  font-family: 'PT Sans', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  /* margin-bottom: 18px; */
+}
+
 .white-title {
   font-family: 'PT Sans', serif;
   font-style: normal;
@@ -410,10 +448,21 @@ html {
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
-
 }
 
 .white-description {
+  font-family: 'PT Sans', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0 85px;
+  width: 230px;
+}
+
+.description {
   font-family: 'PT Sans', serif;
   font-style: normal;
   font-weight: 400;
@@ -485,9 +534,9 @@ margin: 0;
 }
 
 .subscribe {
-  font-weight: 700;
-font-size: 20px;
-line-height: 36px;
+  font-weight: 650;
+  font-size: 17px;
+  line-height: 40px;
 }
 
 .subscribers-catalog {
@@ -506,10 +555,11 @@ line-height: 36px;
 
 .clear-button {
   background-color: transparent;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
   margin-top: 31px;
   padding: 8px 50px;
+  padding-left: 56px;
 }
 
 .clear-button:hover {
@@ -686,8 +736,9 @@ line-height: 36px;
   background-color: #82B3D3;
   border-radius: 0 4px 4px 0;
   font-weight: 700;
-font-size: 20px;
-line-height: 36px;
+  font-size: 20px;
+  line-height: 36px;
+  /* padding: 8px 70px; */
 }
 
 .subscribers-button:hover,
@@ -708,7 +759,7 @@ line-height: 36px;
   text-decoration: none;
   color:#000000;
   margin: 0;
-  padding: 8px 236px 35px 184px;
+  padding: 8px 236px 35px 186px;
 }
 
 .footer-contacts-phone:hover,
@@ -737,7 +788,7 @@ line-height: 36px;
   display: flex;
   width: 1200px;
   margin: 0 auto;
-  padding-top: 37px;
+  padding-top: 38px;
 }
 
 .footer-social {
@@ -846,7 +897,7 @@ input[type=number] {
 .submit-or-clear {
   list-style-type: none;
   padding: 0;
-  margin-top: 58px;
+  margin-top: 56px;
 }
 
 .catalog-header {
@@ -881,7 +932,7 @@ input[type=number] {
 
 .cost-filter {
   display: flex;
-  margin-right: 72px;
+  margin-right: 70px;
 }
 
 .breadcrumbs {
@@ -954,7 +1005,7 @@ input[type=number] {
 
 .founded-container {
   display: flex;
-  margin: 30px 58px 20px 70px;
+  margin: 32px 58px 20px 70px;
   padding: 0;
   flex-wrap: wrap;
 }
@@ -1234,7 +1285,7 @@ line-height: 28px;
   padding: 8px 48px;
   background: #82B3D3;
   border-radius: 4px;
-  font-size: 16px;
+  font-size: 14px;
   box-sizing: border-box;
   line-height: 20px;
   width: 191px;
@@ -1271,7 +1322,7 @@ line-height: 28px;
 .range-scale {
   position: relative;
   height: 4px;
-  margin-top: 48px;
+  margin-top: 46px;
   background-color: rgba(255, 255, 255, 0.3);
 }
 
