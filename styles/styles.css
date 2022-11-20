@@ -702,6 +702,7 @@ margin: 0;
   line-height: 24px;
   text-transform: capitalize;
   margin-bottom: 32px;
+  padding-left: 2px;
 }
 
 .catalog-filter-list {
@@ -1005,7 +1006,7 @@ input[type=number] {
 
 .founded-container {
   display: flex;
-  margin: 32px 58px 20px 70px;
+  margin: 32px 58px 18px 70px;
   padding: 0;
   flex-wrap: wrap;
 }
@@ -1131,6 +1132,7 @@ input[type=number] {
   padding: 0;
   gap: 20px;
   row-gap: 16px;
+  /* padding-top: 3px; */
 }
 
 .hotel-card {
@@ -1395,7 +1397,7 @@ line-height: 28px;
 
 .control-infra,
 .control-type {
-  margin-left: 19px;
+  margin-left: 20px;
   color: #FFFFFF;
   line-height: 23px;
   font-weight: 400;
